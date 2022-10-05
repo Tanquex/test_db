@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titu" onclick="Cambiatitu()">Pagina</h1>
+    <button id="rojo" onmouseover="CambiaARojo()">Soy el Rojo</button>
+    <button id="azul" onmouseover="CambiaAzul()">Soy el azul</button>
+    <button id="verde" onmouseover="CambiaVerde()">Soy el verde</button>
+
+    <script>
+        function CambiaARojo(){
+            alert("Me hiciste click");
+            document.getElementById("rojo").style.color="black";
+            document.getElementById("rojo").style.background="red";
+            document.getElementById("titu").style.color="red";
+
+        }
+
+        function CambiaAzul(){
+            alert("Me hiciste click");
+            document.getElementById("azul").style.color="dark";
+            document.getElementById("azul").style.background="blue";
+            document.getElementById("titu").style.color="blue";
+        }
+
+        function CambiaVerde(){
+            alert("Me hiciste click");
+            document.getElementById("verde").style.color="dark";
+            document.getElementById("verde").style.background="green";
+            document.getElementById("titu").style.color="green";
+        }
+        function Cambiatitu(){
+            alert("Me hiciste click");
+            document.getElementById("titu").style.color="purple";
+            document.getElementById("titu").style.background="yellow";
+        }
+    </script>
+</body>
+</html>
